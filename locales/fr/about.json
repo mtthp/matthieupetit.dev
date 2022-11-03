@@ -1,0 +1,25 @@
+{
+  "expertise": {
+    "design": {
+      "description": "Je travaille sans relâche pour que le rendu soit moderne et accesible à tous.",
+      "picture": "Outils de création numérique",
+      "title": "Conception"
+    },
+    "development": {
+      "description": "Développement de sites professionnels et de haute qualité.",
+      "picture": "Code",
+      "title": "Développement Web"
+    },
+    "mobile": {
+      "description": "Réalisation d'applications iOS et Android.",
+      "picture": "Smartphone",
+      "title": "Applications natives"
+    },
+    "title": "Mon rôle"
+  },
+  "myself": {
+    "role": "Mon travail consiste à réaliser avec soin votre application et à la rendre la plus fonctionnelle et pertinente pour vos utilisateurs. Qui plus est, j'aime allier l'attractivité et la simplicité de l'expérience vécue. Mon objectif est de mettre en valeur de la manière la plus innovante votre identité et votre message.",
+    "summary": "Je suis un créateur de services expirementé à l'écoute du marché dans le domaine du développement Web et Mobile, où je pourrais employer mes compétences et connaissances pour apporter une valeur ajoutée."
+  },
+  "title": "Bonjour 👋"
+}

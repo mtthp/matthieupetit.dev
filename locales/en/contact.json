@@ -1,0 +1,18 @@
+{
+  "form": {
+    "action": "Let's talk",
+    "email": {
+      "label": "Email address"
+    },
+    "message": {
+      "description": "Brief description about you are looking for.",
+      "label": "Your message"
+    },
+    "name": {
+      "label": "Full name"
+    },
+    "onSubmit": "It's {{year}} already! Simply text me or send me an email",
+    "title": "Get in touch"
+  },
+  "title": "Contact"
+}

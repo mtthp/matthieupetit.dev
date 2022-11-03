@@ -1,0 +1,85 @@
+{
+  "education": {
+    "institute": {
+      "description": "Earned fundamental knowledge in computer and web development, in system and network administration, in databases and in project management.",
+      "location": "Nancy Charlemagne Institute of Technology",
+      "title": "University diploma of technology and computer"
+    },
+    "picture": "Education",
+    "title": "Education",
+    "university": {
+      "description": "Learned strong backgrounds for Computer Science specialities such as computer security, business intelligence, human-computer interfaces and software engineering.",
+      "location": "University of Lorraine, Metz",
+      "title": "Master Degree in Computer Science"
+    }
+  },
+  "experience": {
+    "citizencam": {
+      "headline": "Record and <bold>broadcast videos automatically</bold> with on-the-go solutions:",
+      "jobs": {
+        "agile": "Agile method using JIRA and Gitlab",
+        "backEnd": "VOD platform using CakePHP/MySQL and MDL",
+        "engineering": "HTML5 multi video player in vanilla Javascript",
+        "frontEnd": "CRUD recording's data via AdminLTE",
+        "iot": "Raspberry Pi RemoteScreen with NodeJS and VueJS",
+        "native": "Native Java Android app implementation to manage the server"
+      },
+      "title": "Mobile/Web Developer at CitizenCam"
+    },
+    "ing": {
+      "headline": "Revamp of <bold>internal banking applications</bold> to enhance user experience and reduce technical debt:",
+      "jobs": {
+        "backEnd": "REST APIs with Java 13/Maven/SpringBoot/Lombok, unit tests with JUnit/Mockito",
+        "design": "Responsive layout and mobile first strategy following brand design guidelines",
+        "engineering": "Front-end built in vanilla JS, with a homemade Redux store",
+        "frontEnd": "Reusable and extensive components in Polymer/Lit-HTML, unit tests with KarmaJS",
+        "ops": "Automatically build, push and deploy from GitlabCI to Artifactory",
+        "testing": "End-to-end tests with Cypress"
+      },
+      "title": "Web Developer at ING"
+    },
+    "neofacto": {
+      "agentm": {
+        "headline": "<bold>agentM</bold> - Print road fines directly from your smartphone:",
+        "jobs": {
+          "native": "Native Android app in MVVM architecture using Java 8/Gradle/Hilt/Room/Retrofit",
+          "ops": "Continuous Delivery over GitlabCI and Firebase App Distribution"
+        }
+      },
+      "cityapp": {
+        "headline": "<bold>cityapp</bold> - Upgrade your city experience:",
+        "jobs": {
+          "beacons": "Bluetooth Low Energy beacons scanning",
+          "engineering": "Custom map integration with ARCGis",
+          "native": "Native Android/iOS app using React Native, Redux",
+          "notifications": "Push Notifications through Firebase Cloud Messaging"
+        }
+      },
+      "title": "Mobile/Web Developer at NEOFACTO"
+    },
+    "picture": "Work experience",
+    "startalers": {
+      "headline": "Empowering women (and men) to invest with <bold>Capitana</bold> your Best Financial Friend:",
+      "jobs": {
+        "backEnd": "REST APIs architecture in Golang with Cockroach/NSQ",
+        "design": "Figma design mockups",
+        "docs": "Legal IT documents draft and review",
+        "engineering": "Fully featured ReactJS/Typescript SPA",
+        "frontEnd": "Static website using NextJS/TailwindCSS",
+        "ops": "CI/CD with Docker trough GitlabCI"
+      },
+      "title": "Web Developer at StarTalers"
+    },
+    "title": "Experience"
+  },
+  "skills": {
+    "backEnd": "Spring Boot - NestJS - Express - Postman",
+    "frontEnd": "Typescript - React - NextJS - Vue - Tailwind",
+    "native": "React Native - iOS - Android - Firebase - Fastlane",
+    "ops": "Docker - Github Actions - Gitlab CI - Jenkins - Travis",
+    "picture": "Coding skills",
+    "social": "Documentation - Jira - Confluence - Notion",
+    "title": "My Skills"
+  },
+  "title": "Resume"
+}

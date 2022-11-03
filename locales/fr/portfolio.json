@@ -1,0 +1,10 @@
+{
+  "categories": {
+    "ALL": "Tous",
+    "MOBILE": "Mobile",
+    "OPEN_SOURCE": "Open source",
+    "OPS": "Infrastructure",
+    "WEB": "Web"
+  },
+  "title": "Portfolio"
+}

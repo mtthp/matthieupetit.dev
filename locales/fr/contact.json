@@ -1,0 +1,18 @@
+{
+  "form": {
+    "action": "Discutons",
+    "email": {
+      "label": "Adresse email"
+    },
+    "message": {
+      "description": "Rapide description de votre demande.",
+      "label": "Votre message"
+    },
+    "name": {
+      "label": "Nom"
+    },
+    "onSubmit": "On est en {{year}} ! Envoyez-moi tout simplement un SMS ou un email",
+    "title": "Me joindre"
+  },
+  "title": "Contacter"
+}
