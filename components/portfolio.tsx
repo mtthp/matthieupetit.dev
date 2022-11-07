@@ -153,7 +153,7 @@ export default function Portfolio({ className }: React.HTMLAttributes<HTMLElemen
                   viewport={{ once: true }}>
                   <Zoom>
                     <Image
-                      className="rounded-xl"
+                      className="rounded-xl bg-slate-300"
                       src={project.picture}
                       loading="lazy"
                       data-zoom

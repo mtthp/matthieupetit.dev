@@ -27,7 +27,7 @@ export default function SideBar({ className }: React.HTMLAttributes<HTMLElement>
     <aside className={classNames('rounded-3xl bg-slate-50', className)}>
       <div className="sticky top-0 mx-auto flex w-72 flex-col gap-6 p-10 text-center text-gray-600 max-sm:px-0">
         <div className="mask mask-squircle">
-          <svg className="mx-auto h-32 w-32" viewBox="0 0 188 188">
+          <svg className="mx-auto h-32 w-32 bg-slate-300" viewBox="0 0 188 188">
             <image
               xlinkHref="/assets/images/profile.webp"
               height="100%"
