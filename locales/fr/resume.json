@@ -1,0 +1,85 @@
+{
+  "education": {
+    "institute": {
+      "description": "Acquisition de savoirs fondamentaux en développement informatique et web, en administration des systèmes et réseaux, en bases de données et en conduite de projets.",
+      "location": "IUT Nancy Charlemagne",
+      "title": "DUT Informatique"
+    },
+    "picture": "Formation",
+    "title": "Formation",
+    "university": {
+      "description": "Solide expérience dans les spécialités de l'informatique telles que la sécurité informatique, l'intelligence d'affaires, les interfaces homme-machine et le génie logiciel.",
+      "location": "Université de Lorraine, Metz",
+      "title": "Master Génie Informatique"
+    }
+  },
+  "experience": {
+    "citizencam": {
+      "headline": "Enregistrement et <bold>diffusion de vidéos</bold> avec des solutions Plug & Play :",
+      "jobs": {
+        "agile": "Méthode Agile avec JIRA et Gitlab",
+        "backEnd": "Plateforme de vidéo-à-la-demande basée sur CakePHP/MySQL et MDL",
+        "engineering": "Lecteur vidéo multi-vues HTML5 en Javascript pur",
+        "frontEnd": "Gestion des enrigistrements au travers de AdminLTE",
+        "iot": "Diffusion sans-fil avec NodeJS et VueJS sur des Raspberry Pi",
+        "native": "Réalisation d'une application native Android en Java pour diriger au mieux l'enregistrement"
+      },
+      "title": "Développeur Web et Mobile chez CitizenCam"
+    },
+    "ing": {
+      "headline": "Fondation d'une nouvelle base des <bold>services et applications internes bancaires</bold> afin d'améliorer l'expérience utilisateur et réduire la dette technique :",
+      "jobs": {
+        "backEnd": "API REST basées sur Java 13/Maven/SpringBoot/Lombok et tests unitaires avec JUnit/Mockito",
+        "design": "Interface réactive construite autour d'une stratégie « mobile first » en respectant les directives globales de la marque",
+        "engineering": "Front-end en JS pur, muni d'un store Redux fait maison",
+        "frontEnd": "Composants extensibles et réutilisables en Polymer/Lit-HTML, testés avec KarmaJS",
+        "ops": "Déploiement automatique à partir de GitlabCI jusqu'à Artifactory",
+        "testing": "Tests de bout en bout en utilisant Cypress"
+      },
+      "title": "Développeur Web chez ING"
+    },
+    "neofacto": {
+      "agentm": {
+        "headline": "<bold>agentM</bold> - Rédiger et imprimer des contraventions directement depuis son mobile :",
+        "jobs": {
+          "native": "Application Android native construire autour d'une architecture MVVM utilisant Java 8/Gradle/Hilt/Room/Retrofit",
+          "ops": "Intégration continue sur GitlabCI et Firebase App Distribution"
+        }
+      },
+      "cityapp": {
+        "headline": "<bold>cityapp</bold> - La ville. En mieux :",
+        "jobs": {
+          "beacons": "Détection de beacons Bluetooth Low Energy",
+          "engineering": "Intégration direct avec les cartes ARCGis",
+          "native": "Application Android/iOS native utilisant React Native, Redux",
+          "notifications": "Notifications Push au travers de Firebase Cloud Messaging"
+        }
+      },
+      "title": "Mobile/Web Developer at NEOFACTO"
+    },
+    "picture": "Expérience professionnelle",
+    "startalers": {
+      "headline": "<bold>Capitana</bold>, la meilleure amie financière des femmes :",
+      "jobs": {
+        "backEnd": "APIs REST architecturées avec Golang/Cockroach/NSQ",
+        "design": "Réalisation de maquettes Figma",
+        "docs": "Écriture et revue de documentation légale",
+        "engineering": "Application ReactJS/Typescript remplie de fonctionnalités",
+        "frontEnd": "Site web vitrine en utilisant NextJS/TailwindCSS",
+        "ops": "Intégration/déploiement continu avec Docker au travers de GitlabCI"
+      },
+      "title": "Développeur Web chez StarTalers"
+    },
+    "title": "Expérience"
+  },
+  "skills": {
+    "backEnd": "Spring Boot - NestJS - Express - Postman",
+    "frontEnd": "Typescript - React - NextJS - Vue - Tailwind",
+    "native": "React Native - iOS - Android - Firebase - Fastlane",
+    "ops": "Docker - Github Actions - Gitlab CI - Jenkins - Travis",
+    "picture": "Compétences de programmation",
+    "social": "Documentation - Jira - Confluence - Notion",
+    "title": "Mes compétences"
+  },
+  "title": "Cursus"
+}

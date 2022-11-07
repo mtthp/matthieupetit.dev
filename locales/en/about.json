@@ -1,0 +1,25 @@
+{
+  "expertise": {
+    "design": {
+      "description": "I'm trying my best make the design look the most modern and highest quality possible.",
+      "picture": "Creative tools",
+      "title": "Web Design"
+    },
+    "development": {
+      "description": "High-quality development of sites at the professional level.",
+      "picture": "Code",
+      "title": "Web Development"
+    },
+    "mobile": {
+      "description": "Professional development of applications for iOS and Android.",
+      "picture": "Mobile device",
+      "title": "Mobile Apps"
+    },
+    "title": "What I'm doing"
+  },
+  "myself": {
+    "role": "My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most innovative way.",
+    "summary": "I am an experienced web developer seeking a full-time position in the field of Web and Mobile development, where I can apply my knowledge and skills for continuous improvement."
+  },
+  "title": "About me 👨🏻‍💻"
+}

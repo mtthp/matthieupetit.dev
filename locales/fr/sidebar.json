@@ -1,0 +1,13 @@
+{
+  "birthdate": "19 mars 1992",
+  "download": "Télécharger le PDF",
+  "locales": {
+    "en": "English",
+    "fr": "Français"
+  },
+  "location": "Metz, France",
+  "profile": {
+    "description": "Photo de profile"
+  },
+  "status": "Développeur créatif"
+}
