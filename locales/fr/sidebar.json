@@ -1,5 +1,8 @@
 {
-  "birthdate": "19 mars 1992",
+  "calendar": {
+    "description": "Ne pas oublier de lui envoyer un message !",
+    "title": "Anniversaire de Matthieu 🎂"
+  },
   "download": "Télécharger le PDF",
   "locales": {
     "en": "English",

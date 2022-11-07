@@ -7,7 +7,4 @@
 - [ ] remix
   - https://dev.to/thomasledoux1/migrating-my-portfolio-site-from-nextjs-to-remix-4g03
   - https://blog.oldweb2.com/remix-static-site
-- [ ] click on birthday add to calendar
-  - https://stackoverflow.com/a/72644291
-  - https://codepen.io/posterchild/pen/LYVqabP
 - [ ] calendly instead of getting in touch
