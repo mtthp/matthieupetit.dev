@@ -65,7 +65,7 @@ export default function Contact({ className }: React.HTMLAttributes<HTMLElement>
         <div
           ref={mapContainerRef}
           id="map"
-          className="h-96 max-w-full overflow-hidden rounded-2xl bg-slate-400"></div>
+          className="h-96 max-w-full overflow-hidden rounded-2xl bg-slate-300"></div>
       </article>
 
       <article className="mt-8">
