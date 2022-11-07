@@ -1,5 +1,8 @@
 {
-  "birthdate": "March 19, 1992",
+  "calendar": {
+    "description": "Don't forget to send him a message!",
+    "title": "Matthieu's Birthday 🎂"
+  },
   "download": "Download PDF",
   "locales": {
     "en": "English",

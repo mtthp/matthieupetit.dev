@@ -115,11 +115,11 @@ export default function Contact({ className }: React.HTMLAttributes<HTMLElement>
           </div>
 
           {hasSubmit && (
-            <div className="flex-1 rounded-md  border-l-4 border-red-400 bg-red-50 py-2 px-4">
+            <div className="min-w-[12rem] flex-1 rounded-md border-l-4 border-red-400 bg-red-50 py-2 px-4">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
                   {/* <!-- Heroicon name: solid/check-circle --> */}
-                  <ExclamationCircleIcon className="h-6 w-6 shrink-0 text-red-400" />
+                  <ExclamationCircleIcon className="h-6 w-6 shrink-0 text-red-500" />
                 </div>
                 <div className="ml-3">
                   <p className="text-sm font-medium text-red-700">

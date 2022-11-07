@@ -12,6 +12,7 @@ import dayjs from 'dayjs';
 import LocalizedFormat from 'dayjs/plugin/localizedFormat';
 import { useTranslation } from 'next-i18next-static-site';
 import Link from 'next/link';
+import { createDownloadICSFile } from '../lib/calendar';
 import { classNames } from '../lib/classnames';
 dayjs.extend(LocalizedFormat);
 
@@ -21,6 +22,20 @@ export default function SideBar({ className }: React.HTMLAttributes<HTMLElement>
   const onChangeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
     window.history.replaceState(null, '', `/${lang}`);
+  };
+
+  const onBirthdateClick = () => {
+    const now = dayjs();
+    const isBirthdateAlreadyPast = dayjs(`${new Date().getFullYear()}-03-19`).isBefore(now);
+
+    createDownloadICSFile(
+      'Europe/Paris',
+      new Date(`${Number(new Date().getFullYear()) + Number(isBirthdateAlreadyPast)}-03-19`),
+      new Date(`${Number(new Date().getFullYear()) + Number(isBirthdateAlreadyPast)}-03-20`),
+      true,
+      t('calendar.title'),
+      t('calendar.description'),
+    );
   };
 
   return (
@@ -60,7 +75,7 @@ export default function SideBar({ className }: React.HTMLAttributes<HTMLElement>
                   'flex items-center rounded-md p-1.5 pl-2.5 pr-3.5 text-sm font-medium text-gray-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100',
                 )
               }>
-              {({ active, checked }) => (
+              {({ checked }) => (
                 <RadioGroup.Label
                   as="span"
                   className={classNames(
@@ -76,8 +91,12 @@ export default function SideBar({ className }: React.HTMLAttributes<HTMLElement>
 
         <ul className="flex flex-col gap-4 text-gray-600">
           <li className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap">
-            <CalendarIcon className="h-6 w-6 shrink-0" />
-            <span>{i18n.language && dayjs('1992-03-19').locale(i18n.language).format('LL')}</span>
+            <button
+              className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap transition-colors hover:text-indigo-600"
+              onClickCapture={onBirthdateClick}>
+              <CalendarIcon className="h-6 w-6 shrink-0" />
+              <span>{i18n.language && dayjs('1992-03-19').locale(i18n.language).format('LL')}</span>
+            </button>
           </li>
           <li className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap">
             <Link
