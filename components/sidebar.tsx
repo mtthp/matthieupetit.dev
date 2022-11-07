@@ -32,6 +32,7 @@ export default function SideBar({ className }: React.HTMLAttributes<HTMLElement>
               xlinkHref="/assets/images/profile.webp"
               height="100%"
               width="100%"
+              role="img"
               aria-label={t('profile.description')}
             />
           </svg>

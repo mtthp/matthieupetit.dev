@@ -22,14 +22,14 @@
 
 ## Key Features
 
-* Single page website with unbelievable performances and faster than light loading times using [NextJS SSG](https://nextjs.org/docs/basic-features/pages#static-generation)
-* Kind and eye catching animations using [Framer Motion](https://www.framer.com/motion/)
-* Astonshining design inspired by [TailwindUI](https://tailwindui.com/)
-* Perfectly crafted code thanks to [ESlint](https://eslint.org/) and [Prettier](https://prettier.io/)
-* Entirely written in Typescript
-* i18n support
-* Fully responsive and accessible to everybody
-* Automatically build and deploy on [GitHub Pages](https://pages.github.com/)
+* Single page website with **unbelievable performances** and faster than light loading times using [NextJS SSG](https://nextjs.org/docs/basic-features/pages#static-generation)
+* Kind and **eye catching animations** using [Framer Motion](https://www.framer.com/motion/)
+* **Astonshining design** inspired by [TailwindUI](https://tailwindui.com/)
+* **Perfectly crafted code** thanks to [ESlint](https://eslint.org/) and [Prettier](https://prettier.io/)
+* Entirely written in **Typescript**
+* **i18n** support
+* Fully **responsive and accessible** to everybody
+* Automatically **build and deploy** on [GitHub Pages](https://pages.github.com/)
 ## How To Use
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
