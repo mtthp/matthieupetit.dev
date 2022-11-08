@@ -63,6 +63,7 @@ This software uses the following open source packages:
 - [MaterialDesignIcons](https://materialdesignicons.com/)
 - [heroicons](https://heroicons.com/)
 - [dayjs](https://day.js.org/)
+- [typed.js](https://github.com/mattboldt/typed.js)
 
 ## License
 
