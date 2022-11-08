@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { Trans, useTranslation } from 'next-i18next-static-site';
+import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'next-i18next-static-site';
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
@@ -9,14 +9,15 @@ import iconDev from '../public/assets/icons/icon-dev.svg';
 
 export default function About() {
   const { t } = useTranslation('about');
-  const titleSuffixElement = useRef<HTMLSpanElement>(null);
+  const typedTitleElement = useRef<HTMLSpanElement>(null);
+  const typedTitleInView = useInView(typedTitleElement, { once: true });
 
   useEffect(() => {
-    if (!titleSuffixElement.current) return;
+    if (!typedTitleElement.current || !typedTitleInView) return;
 
-    const typed = new Typed(titleSuffixElement.current, {
+    const typed = new Typed(typedTitleElement.current, {
       strings: [t('titles.first'), t('titles.second'), t('titles.third'), t('titles.fourth')],
-      startDelay: 2000,
+      startDelay: 1000,
       typeSpeed: 50,
       backSpeed: 50,
       backDelay: 1000,
@@ -25,7 +26,7 @@ export default function About() {
     return () => {
       typed.destroy();
     };
-  }, []);
+  }, [t, typedTitleInView]);
 
   return (
     <section id="about" className="flex flex-col p-7 pt-20">
@@ -35,7 +36,7 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}>
         <h1 className="text-5xl font-semibold">
-          <span ref={titleSuffixElement} />
+          <span ref={typedTitleElement} />
         </h1>
         <hr className="divider mt-4" />
       </motion.header>

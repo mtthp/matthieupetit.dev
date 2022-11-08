@@ -67,7 +67,11 @@ export default function Contact({ className }: React.HTMLAttributes<HTMLElement>
       <article ref={calContainerRef} className="mt-8">
         <h2 className="text-2xl font-semibold">{t('form.title')}</h2>
         {calContainerInView && (
-          <Cal className="mt-6" calLink="mtthp" config={{ styles: 'background-color: black;' }} />
+          <Cal
+            className="mt-6 min-h-[600px]"
+            calLink="mtthp"
+            config={{ styles: 'background-color: black;' }}
+          />
         )}
       </article>
     </section>
