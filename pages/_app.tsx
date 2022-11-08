@@ -9,6 +9,7 @@ import {
 } from 'next-i18next-static-site';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import Script from 'next/script';
 import Layout from '../components/layout';
 import locales from '../lib/locales';
 
@@ -52,6 +53,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <meta name="msapplication-TileColor" content="#fceae5" />
         {/* <meta name="theme-color" content="#fceae5" /> */}
       </Head>
+      <Script
+        defer
+        data-domain="matthieupetit.dev"
+        src="https://plausible.matthieupetit.dev/js/plausible.js"
+      />
 
       <div className="background fixed top-0 bottom-0 left-0 right-0 z-[-1] h-screen w-screen max-sm:hidden" />
       <I18nProvider i18n={i18n}>
