@@ -19,7 +19,12 @@
   },
   "myself": {
     "role": "Mon travail consiste à réaliser avec soin votre application et à la rendre la plus fonctionnelle et pertinente pour vos utilisateurs. Qui plus est, j'aime allier l'attractivité et la simplicité de l'expérience vécue. Mon objectif est de mettre en valeur de la manière la plus innovante votre identité et votre message.",
-    "summary": "Je suis un créateur de services expirementé à l'écoute du marché dans le domaine du développement Web et Mobile, où je pourrais employer mes compétences et connaissances pour apporter une valeur ajoutée."
+    "summary": "Je suis un créateur de services qualifié à l'écoute du marché dans le domaine du développement Web et Mobile, où je pourrais employer mes compétences et connaissances pour apporter une valeur ajoutée primordial."
   },
-  "title": "Bonjour 👋"
+  "titles": {
+    "first": "Bonjour &#128075;",
+    "fourth": "Me voilà &#128104;&#127995;&#8205;&#128187;",
+    "second": "Voici mes idées &#128161;",
+    "third": "Voici mes projets &#128241;"
+  }
 }

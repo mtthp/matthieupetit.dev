@@ -1,12 +1,31 @@
 import { motion } from 'framer-motion';
-import { useTranslation } from 'next-i18next-static-site';
+import { Trans, useTranslation } from 'next-i18next-static-site';
 import Image from 'next/image';
+import { useEffect, useRef } from 'react';
+import Typed from 'typed.js';
 import iconApp from '../public/assets/icons/icon-app.svg';
 import iconDesign from '../public/assets/icons/icon-design.svg';
 import iconDev from '../public/assets/icons/icon-dev.svg';
 
 export default function About() {
   const { t } = useTranslation('about');
+  const titleSuffixElement = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    if (!titleSuffixElement.current) return;
+
+    const typed = new Typed(titleSuffixElement.current, {
+      strings: [t('titles.first'), t('titles.second'), t('titles.third'), t('titles.fourth')],
+      startDelay: 2000,
+      typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 1000,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <section id="about" className="flex flex-col p-7 pt-20">
@@ -15,7 +34,9 @@ export default function About() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}>
-        <h1 className="text-5xl font-semibold">{t('title')}</h1>
+        <h1 className="text-5xl font-semibold">
+          <span ref={titleSuffixElement} />
+        </h1>
         <hr className="divider mt-4" />
       </motion.header>
       <article className="mt-12 font-thin leading-6 antialiased">
