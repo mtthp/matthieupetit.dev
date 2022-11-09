@@ -50,9 +50,9 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
               className="absolute left-[-0.425rem] top-0 h-3 w-3 rounded-full bg-indigo-600"
               style={{ boxShadow: '0 0 0 0.1875rem rgb(48 76 253 / 25%)' }}
             />
-            <h4 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
+            <h3 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
               {t('experience.startalers.title')}
-            </h4>
+            </h3>
             <span className="text-sm capitalize text-slate-500/75">
               {dayjs('2021-07').locale(i18n.language).format('MMMM YYYY')} —{' '}
               {dayjs('2021-12').locale(i18n.language).format('MMMM YYYY')}
@@ -82,9 +82,9 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
               className="absolute left-[-0.425rem] top-0 h-3 w-3 rounded-full bg-indigo-600"
               style={{ boxShadow: '0 0 0 0.1875rem rgb(48 76 253 / 25%)' }}
             />
-            <h4 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
+            <h3 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
               {t('experience.neofacto.title')}
-            </h4>
+            </h3>
             <span className="text-sm capitalize text-slate-500/75">
               {dayjs('2020-04').locale(i18n.language).format('MMMM YYYY')} —{' '}
               {dayjs('2021-06').locale(i18n.language).format('MMMM YYYY')}
@@ -123,9 +123,9 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
               className="absolute left-[-0.425rem] top-0 h-3 w-3 rounded-full bg-indigo-600"
               style={{ boxShadow: '0 0 0 0.1875rem rgb(48 76 253 / 25%)' }}
             />
-            <h4 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
+            <h3 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
               {t('experience.ing.title')}
-            </h4>
+            </h3>
             <span className="text-sm capitalize text-slate-500/75">
               {dayjs('2018-04').locale(i18n.language).format('MMMM YYYY')} —{' '}
               {dayjs('2020-04').locale(i18n.language).format('MMMM YYYY')}
@@ -155,9 +155,9 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
               className="absolute left-[-0.425rem] top-0 h-3 w-3 rounded-full bg-indigo-600"
               style={{ boxShadow: '0 0 0 0.1875rem rgb(48 76 253 / 25%)' }}
             />
-            <h4 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
+            <h3 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
               {t('experience.citizencam.title')}
-            </h4>
+            </h3>
             <span className="text-sm capitalize text-slate-500/75">
               {dayjs('2015-09').locale(i18n.language).format('MMMM YYYY')} —{' '}
               {dayjs('2018-03').locale(i18n.language).format('MMMM YYYY')}
@@ -206,9 +206,9 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
               className="absolute left-[-0.425rem] top-0 h-3 w-3 rounded-full bg-indigo-600"
               style={{ boxShadow: '0 0 0 0.1875rem rgb(48 76 253 / 25%)' }}
             />
-            <h4 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
+            <h3 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
               {t('education.university.title')}
-            </h4>
+            </h3>
             <span className="text-sm text-slate-500/75">{t('education.university.location')}</span>
             <span className="mt-2 text-sm capitalize text-slate-500/75">
               {dayjs('2013').format('YYYY')} — {dayjs('2016').format('YYYY')}
@@ -230,9 +230,9 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
               className="absolute left-[-0.425rem] top-0 h-3 w-3 rounded-full bg-indigo-600"
               style={{ boxShadow: '0 0 0 0.1875rem rgb(48 76 253 / 25%)' }}
             />
-            <h4 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
+            <h3 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
               {t('education.institute.title')}
-            </h4>
+            </h3>
             <span className="text-sm text-slate-500/75">{t('education.institute.location')}</span>
             <span className="mt-2 text-sm capitalize text-slate-500/75">
               {dayjs('2010').format('YYYY')} — {dayjs('2013').format('YYYY')}
