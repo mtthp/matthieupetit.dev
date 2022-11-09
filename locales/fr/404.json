@@ -1,0 +1,8 @@
+{
+  "actions": {
+    "contact": "Me contacter",
+    "home": "Retrouver son chemin"
+  },
+  "description": "Vérifier l'url dans la barre d'adresse et réessayer.",
+  "title": "Page non trouvée"
+}

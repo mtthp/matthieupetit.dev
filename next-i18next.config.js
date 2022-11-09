@@ -4,6 +4,15 @@ module.exports = {
     languages: ['en', 'fr'],
     defaultLanguage: 'en',
     defaultLocale: 'en',
-    namespaces: ['about', 'resume', 'portfolio', 'contact', 'sidebar', 'navigation', 'footer'],
+    namespaces: [
+      'about',
+      'resume',
+      'portfolio',
+      'contact',
+      'sidebar',
+      'navigation',
+      'footer',
+      '404',
+    ],
   },
 };
