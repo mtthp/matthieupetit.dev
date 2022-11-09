@@ -14,7 +14,7 @@ const Layout = ({ children, className }: React.HTMLAttributes<HTMLElement>) => {
         className,
       ].join(' ')}>
       <Navigation className="max-sm:hidden" />
-      <div className="flex w-full flex-col items-stretch justify-start rounded-3xl bg-white shadow-lg sm:flex-row sm:rounded-tr-none">
+      <div className="flex w-full flex-col items-stretch justify-start rounded-3xl bg-white text-slate-500 shadow-lg dark:bg-slate-900 dark:text-slate-400 sm:flex-row sm:rounded-tr-none">
         <SideBar className="max-sm:rounded-t-none"></SideBar>
         <main className="grow overflow-hidden">{children}</main>
       </div>

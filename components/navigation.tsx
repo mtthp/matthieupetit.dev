@@ -22,14 +22,14 @@ export default function Navigation({ className }: React.HTMLAttributes<HTMLEleme
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
-        className="h-16 self-stretch"
+        className="h-16 self-stretch text-white dark:text-slate-900"
         viewBox="0 0 135.5 70">
         <path
-          fill="#fff"
+          fill="currentColor"
           d="M64 48.3333C40.3125 70 0 70 0 70h135.5V0h-8.673C104.41 0 85.7045 15.5842 74.3306 34.9015 71.281 40.0808 67.8169 44.8421 64 48.3333z"
         />
       </svg>
-      <ul className="z-10 flex h-16 flex-row items-center gap-2 rounded-tr-3xl bg-white pt-4 pr-10 font-medium uppercase tracking-wider">
+      <ul className="z-10 flex h-16 flex-row items-center gap-2 rounded-tr-3xl bg-white pt-4 pr-10 font-medium uppercase tracking-wider dark:bg-slate-900 dark:text-slate-400">
         <li>
           <a
             href="#about"

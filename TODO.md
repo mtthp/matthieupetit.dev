@@ -1,4 +1,3 @@
-- [ ] dark mode
 - [ ] animate navbar border on scroll
   - https://www.youtube.com/watch?v=Qf5wdXOxW3E
   - https://codepen.io/bramus/pen/KKoGNye
