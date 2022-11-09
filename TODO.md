@@ -8,3 +8,4 @@
   - https://dev.to/thomasledoux1/migrating-my-portfolio-site-from-nextjs-to-remix-4g03
   - https://blog.oldweb2.com/remix-static-site
 - [ ] sentry
+- [ ] 404

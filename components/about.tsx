@@ -40,7 +40,7 @@ export default function About() {
         </h1>
         <hr className="divider mt-4" />
       </motion.header>
-      <article className="mt-12 font-thin leading-6 antialiased">
+      <article className="mt-12 leading-6">
         <motion.p
           className="transition-all delay-100 duration-1000"
           initial={{ opacity: 0, y: 24 }}
