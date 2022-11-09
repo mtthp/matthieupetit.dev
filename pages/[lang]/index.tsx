@@ -1,9 +1,13 @@
 import { getAllLanguageSlugs, getLanguage, useTranslation } from 'next-i18next-static-site';
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
+import { Suspense } from 'react';
 import About from '../../components/about';
-import Contact from '../../components/contact';
-import Portfolio from '../../components/portfolio';
-import Resume from '../../components/resume';
+import Loader from '../../components/loader';
+
+const Resume = dynamic(() => import('../../components/resume'), { suspense: true });
+const Portfolio = dynamic(() => import('../../components/portfolio'), { suspense: true });
+const Contact = dynamic(() => import('../../components/contact'), { suspense: true });
 
 export default function SinglePage({ locale }: { locale: string }) {
   const { t } = useTranslation('sidebar');
@@ -15,9 +19,15 @@ export default function SinglePage({ locale }: { locale: string }) {
         <title>Matthieu Petit - {t('status')}</title>
       </Head>
       <About />
-      <Resume className="mt-8" locale={locale} />
-      <Portfolio className="mt-8" />
-      <Contact className="mt-8" />
+      <Suspense fallback={<Loader className="mx-auto my-6" />}>
+        <Resume className="mt-8" locale={locale} />
+      </Suspense>
+      <Suspense fallback={<Loader className="mx-auto my-6" />}>
+        <Portfolio className="mt-8" />
+      </Suspense>
+      <Suspense fallback={<Loader className="mx-auto my-6" />}>
+        <Contact className="mt-8" />
+      </Suspense>
     </>
   );
 }

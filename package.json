@@ -1,5 +1,5 @@
 {
-  "name": "matthieupetit.dev.next13",
+  "name": "matthieupetit.dev",
   "version": "2.0.0",
   "private": true,
   "scripts": {
@@ -15,6 +15,7 @@
     "@heroicons/react": "^2.0.13",
     "@mdi/js": "^7.0.96",
     "@mdi/react": "^1.6.1",
+    "@next/bundle-analyzer": "^13.0.2",
     "dayjs": "^1.11.6",
     "framer-motion": "^7.6.4",
     "i18next": "^22.0.4",

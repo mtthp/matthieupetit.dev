@@ -161,7 +161,7 @@ export default function Portfolio({ className }: React.HTMLAttributes<HTMLElemen
                     />
                   </Zoom>
                   <figcaption className="mt-4">
-                    <h5 className="text-lg font-semibold dark:text-slate-100">
+                    <h2 className="text-lg font-semibold dark:text-slate-100">
                       {project.link ? (
                         <a
                           className="text-indigo-600 underline-offset-2 hover:text-indigo-800 hover:underline dark:text-indigo-500 dark:hover:text-indigo-600"
@@ -171,7 +171,7 @@ export default function Portfolio({ className }: React.HTMLAttributes<HTMLElemen
                       ) : (
                         project.label
                       )}
-                    </h5>
+                    </h2>
                     <span className="mt-1 text-sm text-slate-500/75 dark:text-slate-400">
                       {project.groups.map((group) => t(`categories.${group}`)).join(' - ')}
                     </span>
