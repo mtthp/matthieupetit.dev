@@ -39,8 +39,12 @@ export default function SideBar({ className }: React.HTMLAttributes<HTMLElement>
   };
 
   return (
-    <aside className={classNames('rounded-3xl bg-slate-50', className)}>
-      <div className="sticky top-0 mx-auto flex w-72 flex-col gap-6 p-10 text-center text-gray-600 max-sm:px-0">
+    <aside
+      className={classNames(
+        'rounded-3xl bg-slate-50 text-gray-600 dark:bg-slate-700/25 dark:text-slate-400',
+        className,
+      )}>
+      <div className="sticky top-0 mx-auto flex w-72 flex-col gap-6 p-10 text-center max-sm:px-0">
         <div className="mask mask-squircle">
           <svg className="mx-auto h-32 w-32 bg-slate-300" viewBox="0 0 188 188">
             <image
@@ -52,11 +56,13 @@ export default function SideBar({ className }: React.HTMLAttributes<HTMLElement>
             />
           </svg>
         </div>
-        <h3 className="flex items-center justify-center gap-x-3 text-3xl tracking-tight sm:flex-col">
+        <h3 className="flex items-center justify-center gap-x-3 text-3xl tracking-tight dark:text-slate-300 sm:flex-col">
           Matthieu
           <span className="block font-bold">Petit</span>
         </h3>
-        <span className="self-center rounded-full bg-slate-200 py-2 px-4">{t('status')}</span>
+        <span className="self-center rounded-full bg-slate-200 py-2 px-4 text-gray-600">
+          {t('status')}
+        </span>
 
         <RadioGroup
           value={i18n.language as string}
@@ -72,7 +78,7 @@ export default function SideBar({ className }: React.HTMLAttributes<HTMLElement>
                   checked
                     ? 'bg-white shadow-sm ring-1 ring-black ring-opacity-5'
                     : 'hover:bg-white/80',
-                  'flex items-center rounded-md p-1.5 pl-2.5 pr-3.5 text-sm font-medium text-gray-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100',
+                  'flex items-center rounded-md p-1.5 pl-2.5 pr-3.5 text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100',
                 )
               }>
               {({ checked }) => (
@@ -89,10 +95,10 @@ export default function SideBar({ className }: React.HTMLAttributes<HTMLElement>
           ))}
         </RadioGroup>
 
-        <ul className="flex flex-col gap-4 text-gray-600">
+        <ul className="flex flex-col gap-4 ">
           <li className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap">
             <button
-              className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap transition-colors hover:text-indigo-600"
+              className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap transition-colors hover:text-indigo-600 dark:hover:text-slate-300"
               onClickCapture={onBirthdateClick}>
               <CalendarIcon className="h-6 w-6 shrink-0" />
               <span>{i18n.language && dayjs('1992-03-19').locale(i18n.language).format('LL')}</span>
@@ -100,7 +106,7 @@ export default function SideBar({ className }: React.HTMLAttributes<HTMLElement>
           </li>
           <li className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap">
             <Link
-              className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap transition-colors hover:text-indigo-600"
+              className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap transition-colors hover:text-indigo-600 dark:hover:text-slate-300"
               href="#contact">
               <MapPinIcon className="h-6 w-6 shrink-0" />
               <span>{t('location')}</span>
@@ -108,7 +114,7 @@ export default function SideBar({ className }: React.HTMLAttributes<HTMLElement>
           </li>
           <li>
             <a
-              className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap transition-colors hover:text-indigo-600"
+              className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap transition-colors hover:text-indigo-600 dark:hover:text-slate-300"
               href="mailto:p.matthieu@me.com">
               <EnvelopeIcon className="h-6 w-6 shrink-0" />
               <span>p.matthieu@me.com</span>
@@ -116,7 +122,7 @@ export default function SideBar({ className }: React.HTMLAttributes<HTMLElement>
           </li>
           <li>
             <a
-              className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap transition-colors hover:text-indigo-600"
+              className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap transition-colors hover:text-indigo-600 dark:hover:text-slate-300"
               href="tel:+33604430975">
               <DevicePhoneMobileIcon className="h-6 w-6 shrink-0" />
               <span>+33 604 430 975</span>
@@ -124,7 +130,7 @@ export default function SideBar({ className }: React.HTMLAttributes<HTMLElement>
           </li>
           <li>
             <a
-              className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap transition-colors hover:text-indigo-600"
+              className="flex flex-row flex-nowrap items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap transition-colors hover:text-indigo-600 dark:hover:text-slate-300"
               href="https://github.com/mtthp/">
               <Icon className="shrink-0" path={mdiGithub} size={1} />
               <span>mtthp</span>

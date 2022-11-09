@@ -35,7 +35,7 @@ export default function About() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}>
-        <h1 className="text-5xl font-semibold">
+        <h1 className="text-5xl font-semibold dark:text-slate-200">
           <span ref={typedTitleElement} />
         </h1>
         <hr className="divider mt-4" />
@@ -62,38 +62,44 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="mt-16 transition-all delay-150 duration-1000">
-        <h2 className="text-2xl font-semibold">{t('expertise.title')}</h2>
-        <ul className="mt-6 flex flex-row flex-wrap items-center justify-center gap-6">
+        <h2 className="text-2xl font-semibold dark:text-slate-200">{t('expertise.title')}</h2>
+        <ul className="mt-8 flex flex-row flex-wrap items-center justify-center gap-6">
           <motion.li
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-5 flex w-64 max-w-md flex-auto flex-col items-center gap-3 rounded-3xl border-4 border-slate-100 p-6 text-center transition-all duration-1000">
+            className="flex w-64 max-w-md flex-auto flex-col items-center gap-3 rounded-3xl border-4 border-slate-100 p-6 text-center transition-all duration-1000 dark:border-gray-600">
             <Image alt={t('expertise.development.picture')} src={iconDev} height={40} width={40} />
-            <h3 className="text-xl font-semibold">{t('expertise.development.title')}</h3>
+            <h3 className="text-xl font-semibold dark:text-slate-300">
+              {t('expertise.development.title')}
+            </h3>
             <p className="leading-6">{t('expertise.development.description')}</p>
           </motion.li>
           <motion.li
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="flex w-64 max-w-md flex-auto flex-col items-center gap-3 rounded-3xl border-4 border-slate-100 p-6 text-center transition-all duration-1000">
+            className="flex w-64 max-w-md flex-auto flex-col items-center gap-3 rounded-3xl border-4 border-slate-100 p-6 text-center transition-all duration-1000 dark:border-gray-600">
             <Image alt={t('expertise.mobile.picture')} src={iconApp} height={40} width={40} />
-            <h3 className="text-xl font-semibold">{t('expertise.mobile.title')}</h3>
+            <h3 className="text-xl font-semibold dark:text-slate-300">
+              {t('expertise.mobile.title')}
+            </h3>
             <p className="leading-6">{t('expertise.mobile.description')}</p>
           </motion.li>
           <motion.li
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="flex w-64 max-w-md flex-auto flex-col items-center gap-3 rounded-3xl border-4 border-slate-100 p-6 text-center transition-all duration-1000">
+            className="flex w-64 max-w-md flex-auto flex-col items-center gap-3 rounded-3xl border-4 border-slate-100 p-6 text-center transition-all duration-1000 dark:border-gray-600">
             <Image
               alt={t('expertise.design.description')}
               src={iconDesign}
               height={40}
               width={40}
             />
-            <h3 className="text-xl font-semibold">{t('expertise.design.title')}</h3>
+            <h3 className="text-xl font-semibold dark:text-slate-300">
+              {t('expertise.design.title')}
+            </h3>
             <p className="leading-6">{t('expertise.design.description')}</p>
           </motion.li>
         </ul>

@@ -53,7 +53,7 @@ export default function Contact({ className }: React.HTMLAttributes<HTMLElement>
   return (
     <section id="contact" className={['flex flex-col p-7 pt-20', className].join(' ')}>
       <header>
-        <h1 className="text-5xl font-semibold">{t('title')}</h1>
+        <h1 className="text-5xl font-semibold dark:text-slate-200">{t('title')}</h1>
         <hr className="divider mt-4" />
       </header>
 
@@ -65,7 +65,7 @@ export default function Contact({ className }: React.HTMLAttributes<HTMLElement>
       </article>
 
       <article ref={calContainerRef} className="mt-8">
-        <h2 className="text-2xl font-semibold">{t('form.title')}</h2>
+        <h2 className="text-2xl font-semibold dark:text-slate-200">{t('form.title')}</h2>
         {calContainerInView && (
           <Cal
             className="mt-6 min-h-[600px]"

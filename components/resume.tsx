@@ -17,7 +17,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
   return (
     <section id="resume" className={['flex flex-col p-7 pt-20', className].join(' ')}>
       <motion.header
-        className="transition-opacity duration-1000 ease-in-out"
+        className="transition-opacity duration-1000 ease-in-out dark:text-slate-200"
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}>
@@ -27,7 +27,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
 
       <div className="mt-12">
         <motion.h2
-          className="flex flex-row items-center gap-3 text-2xl font-semibold transition-opacity duration-1000 ease-in-out"
+          className="flex flex-row items-center gap-3 text-2xl font-semibold transition-opacity duration-1000 ease-in-out dark:text-slate-200"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}>
@@ -42,7 +42,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
         </motion.h2>
         <div className="mt-8 pl-4">
           <motion.article
-            className="relative flex flex-col border-l-2 border-gray-100 pl-5 pb-8 transition-opacity delay-100 duration-1000"
+            className="relative flex flex-col border-l-2 border-gray-100 pl-5 pb-8 transition-opacity delay-100 duration-1000 dark:border-gray-600"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}>
@@ -50,7 +50,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
               className="absolute left-[-0.425rem] top-0 h-3 w-3 rounded-full bg-indigo-600"
               style={{ boxShadow: '0 0 0 0.1875rem rgb(48 76 253 / 25%)' }}
             />
-            <h4 className="relative top-[-0.4375rem] text-lg font-semibold">
+            <h4 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
               {t('experience.startalers.title')}
             </h4>
             <span className="text-sm capitalize text-slate-500/75">
@@ -60,7 +60,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
             <p className="mt-4">
               <Trans
                 i18nKey="resume:experience.startalers.headline"
-                components={{ bold: <strong /> }}
+                components={{ bold: <strong className="dark:text-slate-300" /> }}
               />
             </p>
             <ul className="mt-3 list-disc pl-10">
@@ -74,7 +74,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
           </motion.article>
 
           <motion.article
-            className="relative flex flex-col border-l-2 border-gray-100 pl-5 pb-8 transition-opacity duration-1000"
+            className="relative flex flex-col border-l-2 border-gray-100 pl-5 pb-8 transition-opacity duration-1000 dark:border-gray-600"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}>
@@ -82,9 +82,9 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
               className="absolute left-[-0.425rem] top-0 h-3 w-3 rounded-full bg-indigo-600"
               style={{ boxShadow: '0 0 0 0.1875rem rgb(48 76 253 / 25%)' }}
             />
-            <h5 className="relative top-[-0.4375rem] text-lg font-semibold">
+            <h4 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
               {t('experience.neofacto.title')}
-            </h5>
+            </h4>
             <span className="text-sm capitalize text-slate-500/75">
               {dayjs('2020-04').locale(i18n.language).format('MMMM YYYY')} —{' '}
               {dayjs('2021-06').locale(i18n.language).format('MMMM YYYY')}
@@ -92,7 +92,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
             <p className="mt-4">
               <Trans
                 i18nKey="resume:experience.neofacto.cityapp.headline"
-                components={{ bold: <strong /> }}
+                components={{ bold: <strong className="dark:text-slate-300" /> }}
               />
             </p>
             <ul className="mt-3 list-disc pl-10">
@@ -105,7 +105,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
             <p className="mt-4">
               <Trans
                 i18nKey="resume:experience.neofacto.agentm.headline"
-                components={{ bold: <strong /> }}
+                components={{ bold: <strong className="dark:text-slate-300" /> }}
               />
             </p>
             <ul className="mt-3 list-disc pl-10">
@@ -115,7 +115,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
           </motion.article>
 
           <motion.article
-            className="relative flex flex-col border-l-2 border-gray-100 pl-5 pb-8 transition-opacity duration-1000"
+            className="relative flex flex-col border-l-2 border-gray-100 pl-5 pb-8 transition-opacity duration-1000 dark:border-gray-600"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}>
@@ -123,15 +123,18 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
               className="absolute left-[-0.425rem] top-0 h-3 w-3 rounded-full bg-indigo-600"
               style={{ boxShadow: '0 0 0 0.1875rem rgb(48 76 253 / 25%)' }}
             />
-            <h5 className="relative top-[-0.4375rem] text-lg font-semibold">
+            <h4 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
               {t('experience.ing.title')}
-            </h5>
+            </h4>
             <span className="text-sm capitalize text-slate-500/75">
               {dayjs('2018-04').locale(i18n.language).format('MMMM YYYY')} —{' '}
               {dayjs('2020-04').locale(i18n.language).format('MMMM YYYY')}
             </span>
             <p className="mt-4">
-              <Trans i18nKey="resume:experience.ing.headline" components={{ bold: <strong /> }} />
+              <Trans
+                i18nKey="resume:experience.ing.headline"
+                components={{ bold: <strong className="dark:text-slate-300" /> }}
+              />
             </p>
             <ul className="mt-3 list-disc pl-10">
               <li className="leading-6">{t('experience.ing.jobs.engineering')}</li>
@@ -152,9 +155,9 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
               className="absolute left-[-0.425rem] top-0 h-3 w-3 rounded-full bg-indigo-600"
               style={{ boxShadow: '0 0 0 0.1875rem rgb(48 76 253 / 25%)' }}
             />
-            <h5 className="relative top-[-0.4375rem] text-lg font-semibold">
+            <h4 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
               {t('experience.citizencam.title')}
-            </h5>
+            </h4>
             <span className="text-sm capitalize text-slate-500/75">
               {dayjs('2015-09').locale(i18n.language).format('MMMM YYYY')} —{' '}
               {dayjs('2018-03').locale(i18n.language).format('MMMM YYYY')}
@@ -162,7 +165,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
             <p className="mt-4">
               <Trans
                 i18nKey="resume:experience.citizencam.headline"
-                components={{ bold: <strong /> }}
+                components={{ bold: <strong className="dark:text-slate-300" /> }}
               />
             </p>
             <ul className="mt-3 list-disc pl-10">
@@ -179,7 +182,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
 
       <div className="mt-8">
         <motion.h2
-          className="flex flex-row items-center gap-3 text-2xl font-semibold transition-opacity duration-1000 ease-in-out"
+          className="flex flex-row items-center gap-3 text-2xl font-semibold transition-opacity duration-1000 ease-in-out dark:text-slate-200"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}>
@@ -195,7 +198,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
 
         <div className="mt-8 pl-4">
           <motion.article
-            className="relative flex flex-col border-l-2 border-gray-100 pl-5 pb-8 transition-opacity delay-100 duration-1000 ease-in-out"
+            className="relative flex flex-col border-l-2 border-gray-100 pl-5 pb-8 transition-opacity delay-100 duration-1000 ease-in-out dark:border-gray-600"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}>
@@ -203,7 +206,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
               className="absolute left-[-0.425rem] top-0 h-3 w-3 rounded-full bg-indigo-600"
               style={{ boxShadow: '0 0 0 0.1875rem rgb(48 76 253 / 25%)' }}
             />
-            <h4 className="relative top-[-0.4375rem] text-lg font-semibold">
+            <h4 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
               {t('education.university.title')}
             </h4>
             <span className="text-sm text-slate-500/75">{t('education.university.location')}</span>
@@ -213,7 +216,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
             <p className="mt-4">
               <Trans
                 i18nKey="resume:education.university.description"
-                components={{ bold: <strong /> }}
+                components={{ bold: <strong className="dark:text-slate-300" /> }}
               />
             </p>
           </motion.article>
@@ -227,9 +230,9 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
               className="absolute left-[-0.425rem] top-0 h-3 w-3 rounded-full bg-indigo-600"
               style={{ boxShadow: '0 0 0 0.1875rem rgb(48 76 253 / 25%)' }}
             />
-            <h5 className="relative top-[-0.4375rem] text-lg font-semibold">
+            <h4 className="relative top-[-0.4375rem] text-lg font-semibold dark:text-slate-300">
               {t('education.institute.title')}
-            </h5>
+            </h4>
             <span className="text-sm text-slate-500/75">{t('education.institute.location')}</span>
             <span className="mt-2 text-sm capitalize text-slate-500/75">
               {dayjs('2010').format('YYYY')} — {dayjs('2013').format('YYYY')}
@@ -237,7 +240,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
             <p className="mt-4">
               <Trans
                 i18nKey="resume:education.institute.description"
-                components={{ bold: <strong /> }}
+                components={{ bold: <strong className="dark:text-slate-300" /> }}
               />
             </p>
           </motion.article>
@@ -246,7 +249,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
 
       <div className="mt-8" ref={skillsRef}>
         <motion.h2
-          className="flex flex-row items-center gap-3 text-2xl font-semibold transition-opacity duration-1000 ease-in-out"
+          className="flex flex-row items-center gap-3 text-2xl font-semibold transition-opacity duration-1000 ease-in-out dark:text-slate-200"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}>
@@ -260,8 +263,8 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
           {t('skills.title')}
         </motion.h2>
 
-        <div className="mt-8 rounded-3xl bg-gray-100 p-6 sm:p-8">
-          <label htmlFor="frontend" className="block text-xs font-medium text-gray-700">
+        <div className="mt-8 rounded-3xl bg-gray-100 p-6 text-gray-700 dark:bg-slate-700/25 dark:text-slate-400 sm:p-8">
+          <label htmlFor="frontend" className="block text-xs font-medium ">
             {t('skills.frontEnd')}
           </label>
           <motion.progress
@@ -270,7 +273,7 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
             value={skillsInView ? 90 : 0}
             max="100"
           />
-          <label htmlFor="backend" className="mt-6 block text-xs font-medium text-gray-700">
+          <label htmlFor="backend" className="mt-6 block text-xs font-medium ">
             {t('skills.backEnd')}
           </label>
           <progress
@@ -279,15 +282,15 @@ export default function Resume({ className }: HTMLAttributes<HTMLElement> & { lo
             value={skillsInView ? 75 : 0}
             max="100"
           />
-          <label htmlFor="native" className="mt-6 block text-xs font-medium text-gray-700">
+          <label htmlFor="native" className="mt-6 block text-xs font-medium ">
             {t('skills.native')}
           </label>
           <progress id="native" className="progress mt-1" value={skillsInView ? 50 : 0} max="100" />
-          <label htmlFor="social" className="mt-6 block text-xs font-medium text-gray-700">
+          <label htmlFor="social" className="mt-6 block text-xs font-medium ">
             {t('skills.social')}
           </label>
           <progress id="social" className="progress mt-1" value={skillsInView ? 70 : 0} max="100" />
-          <label htmlFor="ops" className="mt-6 block text-xs font-medium text-gray-700">
+          <label htmlFor="ops" className="mt-6 block text-xs font-medium">
             {t('skills.ops')}
           </label>
           <progress id="ops" className="progress mt-1" value={skillsInView ? 65 : 0} max="100" />
