@@ -1,9 +1,20 @@
 import { useTranslation } from 'next-i18next-static-site';
+import { usePlausible } from 'next-plausible';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
+
+type PlausibleEvents = {
+  '404': never;
+};
 
 export default function NotFound() {
   const { t } = useTranslation('404');
+  const plausible = usePlausible<PlausibleEvents>();
+
+  useEffect(() => {
+    plausible('404');
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   return (
     <div className="min-h-full p-7 md:grid md:place-items-center lg:px-8">
       <div className="mx-auto max-w-max">

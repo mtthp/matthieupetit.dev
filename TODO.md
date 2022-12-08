@@ -3,7 +3,6 @@
   - https://codepen.io/bramus/pen/KKoGNye
   - https://www.sitepoint.com/using-svg-with-media-queries/
   - https://css-tricks.com/animate-svg-path-changes-in-css/
-- [ ] remix
-  - https://dev.to/thomasledoux1/migrating-my-portfolio-site-from-nextjs-to-remix-4g03
-  - https://blog.oldweb2.com/remix-static-site
+- [ ] astro
+  - https://vanntile.com/blog/next-to-astro
 - [ ] sentry
