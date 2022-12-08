@@ -7,6 +7,7 @@ import {
   namespaces,
   defaultNamespace,
 } from 'next-i18next-static-site';
+import PlausibleProvider from 'next-plausible';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import Script from 'next/script';
@@ -53,18 +54,20 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <meta name="msapplication-TileColor" content="#fceae5" />
         {/* <meta name="theme-color" content="#fceae5" /> */}
       </Head>
-      <Script
-        defer
-        data-domain="matthieupetit.dev"
-        src="https://plausible.matthieupetit.dev/js/plausible.js"
-      />
 
       <div className="background fixed top-0 bottom-0 left-0 right-0 z-[-1] h-screen w-screen max-sm:hidden" />
-      <I18nProvider i18n={i18n}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </I18nProvider>
+      <PlausibleProvider
+        domain="matthieupetit.dev"
+        customDomain="https://plausible.matthieupetit.dev"
+        trackOutboundLinks
+        trackFileDownloads
+        selfHosted>
+        <I18nProvider i18n={i18n}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </I18nProvider>
+      </PlausibleProvider>
     </>
   );
 };
